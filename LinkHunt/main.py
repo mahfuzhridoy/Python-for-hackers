@@ -7,7 +7,7 @@ import argparse # For adding arguments
 visited_urls = set()
 
 headers = {
-    "User-Agent": "Mozilla5/0"
+    "User-Agent": "Mozilla/5.0"
 }
 
 def spider_urls(url, keyword=None):
