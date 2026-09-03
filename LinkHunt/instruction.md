@@ -1,4 +1,4 @@
-# URL Keyword Spider
+# URL Keyword main
 
 A simple Python script that scans a webpage, extracts links (`<a>` tags), and prints URLs containing a specified keyword.
 
@@ -17,7 +17,7 @@ pip install requests beautifulsoup4
 Save the Python code as:
 
 ```text
-spider.py
+main.py
 ```
 
 The script accepts two command-line arguments:
@@ -30,19 +30,19 @@ The script accepts two command-line arguments:
 Run the script with:
 
 ```bash
-python3 spider.py --url example.com --keyword login
+python3 main.py --url example.com --keyword login
 ```
 
 Or using the short options:
 
 ```bash
-python3 spider.py -u example.com -k login
+python3 main.py -u example.com -k login
 ```
 
 ### Example
 
 ```bash
-python3 spider.py -u example.com -k product
+python3 main.py -u example.com -k product
 ```
 
 The script will request:
@@ -89,7 +89,7 @@ If the page contains:
 Running:
 
 ```bash
-python3 spider.py -u example.com -k login
+python3 main.py -u example.com -k login
 ```
 
 could produce:
@@ -108,7 +108,7 @@ Specifies the webpage that will be scanned.
 Example:
 
 ```bash
-python3 spider.py -u example.com
+python3 main.py -u example.com
 ```
 
 ### `--keyword` / `-k`
@@ -118,7 +118,7 @@ Specifies the keyword that should be searched for in the URLs.
 Example:
 
 ```bash
-python3 spider.py -u example.com -k admin
+python3 main.py -u example.com -k admin
 ```
 
 ## Important Notes
@@ -130,13 +130,13 @@ The current script automatically adds `https://`.
 Use:
 
 ```bash
-python3 spider.py -u example.com -k login
+python3 main.py -u example.com -k login
 ```
 
 instead of:
 
 ```bash
-python3 spider.py -u https://example.com -k login
+python3 main.py -u https://example.com -k login
 ```
 
 Otherwise, the script will construct an invalid URL:
@@ -217,13 +217,13 @@ pip install requests beautifulsoup4
 ### 2. Save the script
 
 ```text
-spider.py
+main.py
 ```
 
 ### 3. Run it
 
 ```bash
-python3 spider.py -u example.com -k login
+python3 main.py -u example.com -k login
 ```
 
 ### 4. View matching URLs
