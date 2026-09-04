@@ -19,7 +19,7 @@ Make sure you are using Python 3.
 Read URLs from a file:
 
 ```bash
-cat urls.txt | python3 url_resolver.py
+cat urls.txt | python3 resolver.py
 ```
 
 By default, the tool uses **50 concurrent threads**.
@@ -29,13 +29,13 @@ By default, the tool uses **50 concurrent threads**.
 You can specify the number of concurrent requests using `-t` or `--threads`:
 
 ```bash
-cat urls.txt | python3 url_resolver.py -t 100
+cat urls.txt | python3 resolver.py -t 100
 ```
 
 or:
 
 ```bash
-cat urls.txt | python3 url_resolver.py --threads 100
+cat urls.txt | python3 resolver.py --threads 100
 ```
 
 ## What It Does
@@ -61,7 +61,7 @@ https://github.com
 Run:
 
 ```bash
-cat urls.txt | python3 url_resolver.py
+cat urls.txt | python3 resolver.py
 ```
 
 The tool will print URLs that successfully return HTTP `200`.
